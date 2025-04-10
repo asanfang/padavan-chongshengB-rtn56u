@@ -1,7 +1,7 @@
 /* Xiaomi Mi Nano (R1CL)*/
 
-#define BOARD_PID		"MI-NANO"
-#define BOARD_NAME		"MI-NANO"
+#define BOARD_PID		"s1box"
+#define BOARD_NAME		"s1box"
 #define BOARD_DESC		"Xiaomi Mi Nano Wireless Router"
 #define BOARD_VENDOR_NAME	"Beijing Xiaomi Technology Co., Ltd."
 #define BOARD_VENDOR_URL	"http://www.mi.com/"
