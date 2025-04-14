@@ -145,12 +145,12 @@ image:
 	[ -d $(IMAGEDIR) ] || mkdir $(IMAGEDIR)
 	$(MAKEARCH) -C vendors image
 
-.PHONY: linux
-linux:
-	$(MAKEARCH_KERNEL) -j$(HOST_NCPU) -C $(LINUXDIR) $(LINUXTARGET) || exit 1
-	if [ -f $(LINUXDIR)/vmlinux ]; then \
-		ln -f $(LINUXDIR)/vmlinux $(LINUXDIR)/linux ; \
-	fi
+# .PHONY: linux
+# linux:
+#	$(MAKEARCH_KERNEL) -j$(HOST_NCPU) -C $(LINUXDIR) $(LINUXTARGET) || exit 1
+#	if [ -f $(LINUXDIR)/vmlinux ]; then \
+#		ln -f $(LINUXDIR)/vmlinux $(LINUXDIR)/linux ; \
+#	fi
 
 .PHONY: sparse
 sparse:
